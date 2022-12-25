@@ -1,2 +1,2 @@
 "use strict";
-console.log("STARTING OF A GREAT PROJECT. Again");
+console.log("Express App that will provide connect Applications to google sheet");
