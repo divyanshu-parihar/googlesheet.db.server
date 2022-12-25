@@ -1,0 +1,19 @@
+{
+  "name": "googlesheet.db.server",
+  "version": "0.0.1",
+  "description": "This is the server instance for the googlesheet.db project",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divyanshu-parihar/googlesheets.db.server.git"
+  },
+  "author": "Divyanshu Parihar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divyanshu-parihar/googlesheets.db.server/issues"
+  },
+  "homepage": "https://github.com/divyanshu-parihar/googlesheets.db.server#readme"
+}
