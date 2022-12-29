@@ -21,7 +21,7 @@ class GoogleClient {
     //delete
     //query
 
-    async getData(spreadsheetId: string, range: string): Promise<void | Error> {
+    async getData(spreadsheetId: string, range: string): Promise<{}> {
 
         try {
             // let result:Response = await fetch('https://sheets.googleapis.com/v4/spreadsheets/1Mw3Cs0WX7Xa91iqEsQ2uQtV4nmrrag1HFK7Zc7dMhUc?ranges=Sheet1!A1%3AB2&key=[YOUR_API_KEY]', {
@@ -37,9 +37,9 @@ class GoogleClient {
             const metaData = await this.googlesheets.spreadsheets.get({
                 auth: this.auth,
                 spreadsheetId,
-
+                ranges:["Sheet1!A:A"]
             })
-            console.log(metaData)
+            return metaData.data;
         } catch (err) {
             // TODO (developer) - Handle exception
             console.log(err)

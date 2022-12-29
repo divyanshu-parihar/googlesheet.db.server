@@ -25,8 +25,9 @@ class GoogleClient {
                 const metaData = yield this.googlesheets.spreadsheets.get({
                     auth: this.auth,
                     spreadsheetId,
+                    ranges: ["Sheet1!A:A"]
                 });
-                console.log(metaData);
+                return metaData.data;
             }
             catch (err) {
                 console.log(err);
