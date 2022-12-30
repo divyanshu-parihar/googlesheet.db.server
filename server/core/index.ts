@@ -1,5 +1,8 @@
 import { GoogleAuth } from "google-auth-library";
 import { google, sheets_v4 } from "googleapis";
+/*
+    GoogleClient : Custom Class to handle operations with googlesheets
+*/
 class GoogleClient {
     // private googleClientKey: string;
     // private googleSecretKey: string;
@@ -9,18 +12,6 @@ class GoogleClient {
         scopes: 'https://www.googleapis.com/auth/spreadsheets',
     })
     private googlesheets: sheets_v4.Sheets = google.sheets({ version: 'v4', auth: this.auth });
-    constructor(GoogleClientKey: string, GoogleSecretKey: string, ApiKey: string) {
-        // this.googleClientKey = GoogleClientKey;
-        // this.googleSecretKey = GoogleSecretKey;
-        // this.api_key = ApiKey;
-    }
-
-
-    // methods to perform tasks on the database;
-    //insert
-    //delete
-    //query
-
     async getData(spreadsheetId: string, range: string): Promise<{}> {
 
         try {

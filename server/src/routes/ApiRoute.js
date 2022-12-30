@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const core_1 = __importDefault(require("../core"));
 const router = express_1.default.Router();
-const googleClient = new core_1.default(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET, process.env.GOOGLE_SHEETS_API_KEY);
+const googleClient = new core_1.default();
 router.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const data = yield googleClient.getData('1Mw3Cs0WX7Xa91iqEsQ2uQtV4nmrrag1HFK7Zc7dMhUc', 'Class Data!A2:C');
     res.send(data);

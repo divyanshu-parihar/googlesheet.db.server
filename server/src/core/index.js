@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const google_auth_library_1 = require("google-auth-library");
 const googleapis_1 = require("googleapis");
 class GoogleClient {
-    constructor(GoogleClientKey, GoogleSecretKey, ApiKey) {
+    constructor() {
         this.auth = new google_auth_library_1.GoogleAuth({
             keyFile: 'credentials.json',
             scopes: 'https://www.googleapis.com/auth/spreadsheets',
