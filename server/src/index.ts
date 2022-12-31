@@ -16,7 +16,7 @@ const app: Express = express()
 app.use('/',ApiRoute)
 
 
-app.listen(8080,()=>console.log('SERVER STARTED!'));
+app.listen(8080,()=>console.log('server started at http://localhost:8080'));
 
 
 
