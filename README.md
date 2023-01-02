@@ -5,7 +5,7 @@ An open-source Express API to handle CRUD on a google sheet with help of Google 
 
 
 
-Note: Please contact, If you want me to host this for you on - [@Upwork](https://www.upwork.com/freelancers/~017345a6de85fb163d)
+#####Note: Please contact, If you want me to host this for you on - [@Upwork](https://www.upwork.com/freelancers/~017345a6de85fb163d)
 
 ## Deployment
 
@@ -14,6 +14,7 @@ To deploy this project run
 ```bash
   1. git clone https://github.com/divyanshu-parihar/googlesheet.db.server.git
   2. npm install
+  3. create and fill credentials.json and .env file as examples
   3. tsc --watch
   4. node out/index.js
   5. Your server is started! 🎉
