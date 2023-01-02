@@ -1,3 +1,3 @@
 import ApiRoute from './ApiRoute'
-
-export { ApiRoute };
+import DbRouter from './DbRoutes'
+export { ApiRoute, DbRouter };

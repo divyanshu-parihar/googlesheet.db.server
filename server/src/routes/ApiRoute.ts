@@ -9,7 +9,6 @@ const googleClient: GoogleClient = new GoogleClient()
 
 router.post("/get", async (req: Request, res: Response) => {
     try {
-
         if (!req.query['query'] || !req.query['spreedsheetId']) return res.status(400).send("Please provide a query string.")
         const query:string = req.query['query'] as string;
         const spreedsheetId:string = req.query['spreedsheetId'] as string;
@@ -20,8 +19,6 @@ router.post("/get", async (req: Request, res: Response) => {
     } catch (e) {
         return res.status(500).send('Error')
     }
-
-
 })
 
 router.post('/remove', async (req: Request, res: Response) => {
