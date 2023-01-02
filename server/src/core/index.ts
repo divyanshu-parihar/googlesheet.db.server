@@ -62,7 +62,6 @@ class GoogleClient {
             console.log(err)
             return new Error("Error Occured!");
         }
-
     }
 
     async updateData(spreadsheetId: string, ranges: string,values:any[]): Promise<any> {
