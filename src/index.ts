@@ -10,7 +10,8 @@ import cors from 'cors'
 
 // import GoogleClient from "./core"
 import { ApiRoute, DbRouter } from './routes'
-//configuring the dotenv variables;
+
+
 dotenv.config()
 
 const app: Express = express()
